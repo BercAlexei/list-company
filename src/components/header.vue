@@ -13,7 +13,7 @@ export default {
 <style lang='scss' scope>
 .header {
   padding-top: 52px;
-  background: url('/assets/img/header.png') bottom left / cover no-repeat;
+  background: url('../assets/img/header.png') bottom left / cover no-repeat;
   height: 160px;
 }
 .title {

@@ -93,9 +93,7 @@ export default {
       this.companies = this.companies.filter(companiy => companiy.id !== id)
     },
     pushData({date, nameCompany, location, inn, ogrn}) {
-      let options = { year: 'numeric', month: 'numeric', day: 'numeric' };
-      let dateStr = new Date(date).toLocaleString('ru-RU', options)
-      this.companies.push(new newCompany(this.companies.length + 1, nameCompany, location, parseInt(inn), parseInt(ogrn), dateStr))
+      this.companies.push(new newCompany(this.companies.length + 1, nameCompany, location, parseInt(inn), parseInt(ogrn), date))
     }
   },
   created() {
