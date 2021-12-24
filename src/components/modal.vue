@@ -73,7 +73,7 @@ export default {
       if (this.company.inn !== null) {
         let url = "https://suggestions.dadata.ru/suggestions/api/4_1/rs/findById/party";
         let token = "07c3e33c68a792d1d82de0c996c43f1580bcc36e";
-        let query = "7707083893";
+        let query = this.company.inn;
 
         let options = {
             method: "POST",
